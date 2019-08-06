@@ -1,0 +1,99 @@
+
+.contacts {
+    background-color:none;
+    padding:20px;
+    height: 520px;
+    font-size: 24px;
+}
+
+
+.contacts.p1p {
+    background-color: #f2f2f2;
+ 
+}
+
+.contacts-div {
+  max-width: 80%;
+  margin-left: 120px;
+  text-align: left;
+}
+
+.contacts-div > .title1, .contacts > .title1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;    
+    padding-bottom: 20px;    
+
+    font-weight: bold;
+    text-align: left;
+    line-height: 2em;
+    padding-top: 16px;
+}
+
+.input {
+    width:100%;
+    border: 1px solid #bcc6d0;
+    height:42px;
+    font-size:12px;
+    font-weight:400;
+    border-radius:2px;
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 5px;
+}
+
+textarea.input {
+    height:120px;
+}
+
+
+p.contact_title {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  
+}
+
+p.contact_desc {
+    color: #747474;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+p.contact_desc > a {
+  text-decoration: none;
+  color: #747474;
+}
+
+/* placeholder fadeout */
+/* Place Holder CSS */
+::-webkit-input-placeholder {
+    color: #000;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+  }
+  :-moz-placeholder {
+    color: #000;
+    opacity: 0.5;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+  }
+  ::-moz-placeholder {
+    color: #000;
+    opacity: 0.5;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+  }
+  :-ms-input-placeholder {  
+    color: #000;
+    opacity: 0.5;
+    -ms-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+  }
+  

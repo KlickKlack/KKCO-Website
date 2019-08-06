@@ -1,291 +1,356 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="專業的網路解決方案">
     <meta property="og:site_name" content="可立可股份有限公司 KlickKlack Communications">
     <meta property="og:title" content="KlickKlack Communications ｜ 專業的網路解決方案">
-    <meta property="og:description" content="專業的網路解決方案">
+    <meta property="og:description" content="KlickKlack Communications 是 KlickKlack 集團的一員。提供專業的資通訊服務，除了累積了近千場的活動執行經驗之外，也為數十家新創公司建置企業資訊與網路環境，彈性解決方案可隨企業的快速成長給予對應規模的服務，亦針對 NGO 組織提供新世代的網路聯防解決方案。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.kkco.com.tw">
-    <meta property="og:image" content="http://www.kkco.com.tw/img/KKCO_600_white.png">
-    <meta property="og:image:secure_url" content="https://www.kkco.com.tw/img/KKCO_600_white.png">
+    <meta property="og:image" content="http://www.kkco.com.tw/img/og_image.png">
+    <meta property="og:image:secure_url" content="https://www.kkco.com.tw/img/og_image.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="4043">
     <meta property="og:image:height" content="670">
     <meta name="mobile-web-app-capable" content="yes">
-    <!--the must have assets-->
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js" defer></script>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-73946831-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-73946831-4');
-      
-    </script>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-924118074"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-924118074');
-      
-      function gtag_report_conversion(url) {
-      	ga('send', 'event', 'submit', 'click')				
-      
-      	var callback = function () {
-      		if (typeof(url) != 'undefined') {
-      			window.location = url;
-      		}
-      	};
-      	gtag('event', 'conversion', { 'send_to': 'AW-924118074/7gPtCJz0wHUQutjTuAM', 'event_callback': callback });
-      	return false;
-      }
-      
-    </script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      
-      ga('create', 'UA-73946831-4', 'auto');
-      ga('send', 'pageview');
-      
-    </script>
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '547203452445808');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=547203452445808&amp;ev=PageView&amp;noscript=1"></noscript>
     <title>KlickKlack Communications ｜ 專業的網路解決方案</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/contacts.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/cb_slides.css">
+    <link rel="stylesheet" type="text/css" href="css/rwd.css">
+    <!-- FA-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- SWAL2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+    <!-- reCaptcha v3-->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdYMakUAAAAABfgxjfVxbx7tBZCD8nXk5Fulgqr"></script>
+    <script>
+      let grecaptcha_token = ""
+      grecaptcha.ready(function() {
+        grecaptcha.execute('6LdYMakUAAAAABfgxjfVxbx7tBZCD8nXk5Fulgqr', {action: 'homepage'}).then(function(token) {
+          grecaptcha_token = token
+          document.getElementById('contact_submit_btn').style.display = '';
+        });
+      });
+    </script>
   </head>
   <body>
-    <main>
-      <div style="background-image: url(img/bg/LandingPages_header.jpg)" class="cover cover--09 js-cover">
-        <div class="container">
-          <div class="cover__content_box cover__content_box--09">
-            <h2 class="cover__title cover__title--09">
-              <div class="logo"></div>
-            </h2>
-            <div class="cover__description_box--09"><span class="cover__description_text--09">專業的網路解決方案</span></div>
-            <div class="cover__button_box--09"><a href="#contacts" class="button button--border-white">立即預約</a></div>
-          </div>
+    <div class="navbar-container">
+      <div class="navbar">
+        <div class="links">
+          <ul>
+            <li class="logo"><img src="images/logo_new.png" alt="klickklack communications logo" class="logo-pic"></li>
+            <li><a href="index.html"> <i class="fa fa-fw fa-street-view"></i>For Event</a></li>
+            <li><a href="space.html"> <i class="fa fa-fw fa-home"></i>For Space</a></li>
+            <li>
+              <div style="position: absolute; height:20px; width:100px; margin-left: 4%; margin-top: -15px;"><sup style="font-size:10px; color: gray;">Coming Soon</sup></div><span style="color: white;"><i class="fa fa-fw fa-building"></i>For NGO </span>
+            </li>
+            <li><a href="#" id="contact-us"><i class="fa fa-fw fa-envelope"></i>聯絡我們</a></li>
+            <li>
+              <div class="nav-icon">
+                <div></div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="features features--02">
+    </div>
+    <div class="contents">
+      <section class="pages p0">
+        <ul class="cb-slideshow">
+          <li><span>image_1</span></li>
+          <li><span>image_2</span></li>
+          <li><span>image_3</span></li>
+          <li><span>image_4</span></li>
+          <div class="landscape-div">
+            <p class="landscape-title">最專業的活動網路解決方案</p>
+            <div id="b1" class="cover-button animated pulse"><a class="button">立即預約</a></div>
+          </div>
+        </ul>
+      </section>
+      <section class="pages p1">
+        <p data-aos="zoom-out" class="title1 title-p1">如虎添翼的流暢體驗</p>
+      </section>
+      <!-- 服務特點-->
+      <section class="inter-pages p35">
         <div class="container">
-          <div class="features__title_box features__title_box--02">
-            <h2 class="features__title--02">成功活動的幕後推手</h2><span class="features__description features__description--02">網路順得感覺不到它的存在</span>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row features__row">
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02">
-              <div class="features__item_icon_circle features__item_icon_circle--02 features__item_icon_circle--magnifier-icon--blue"></div>
-              <h3 class="features__item_title">客製化的網路顧問</h3><span class="features__item_text">全盤檢視及深入挖掘您的需求，並根據您的需求，量身打造最適合的網路架構規劃設計及活動現場施作方式。</span>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02">
-              <div class="features__item_icon_circle features__item_icon_circle--02 features__item_icon_circle--code-icon--blue"></div>
-              <h3 class="features__item_title">專業的規劃設計執行</h3><span class="features__item_text">依照活動特色及場地特性，進行客製化的網路架構設計，提供穩定與高可靠的網路連線與使用體驗。</span>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02">
-              <div class="features__item_icon_circle features__item_icon_circle--02 features__item_icon_circle--gear-icon--blue"></div>
-              <h3 class="features__item_title">企業級設備規格</h3><span class="features__item_text">採用與 Google、Facebook 舉辦之大型活動同等級設備，輔佐設定調校經驗，提昇連線品質及服務體驗。</span>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3 features__item features__item--02">
-              <div class="features__item_icon_circle features__item_icon_circle--02 features__item_icon_circle--bubbles-icon--blue"></div>
-              <h3 class="features__item_title">可靠的溝通橋樑</h3><span class="features__item_text">與活動場地、電信業者及其他合作廠商之合作溝通協調，加速籌備期間之網路規劃設計效率，降低溝通成本。</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div style="max-width: 1140px; margin: auto;" class="features features--11">
-        <div class="features__container--11">
-          <div class="container">
-            <div style="background-image: url(img/bg/KK-Work-MeetBao.jpg)" class="features__box--11 features__box--image--11 features__box--image--left--11"></div>
-            <div class="features__box--11 features__box--left-margin--11">
-              <h3 class="features__item_title--11">互動科技展覽網路</h3><span class="features__item_text features__item_text--11">配合展場內大量 IoT 設備，設計並提供穩定的有線與無線臨時網路架設，提升展覽即時互動性與參觀者之體驗。</span>
-            </div>
-          </div>
-        </div>
-        <div class="features__container--11">
-          <div class="container">
-            <div class="features__box--11">
-              <h3 class="features__item_title--11">大型演唱會網路</h3><span class="features__item_text features__item_text--11">提供活動會場高密度無線網路涵蓋，佈建刷卡專線網路讓會場金流暢行無阻。</span>
-            </div>
-            <div style="background-image: url(img/bg/KK-Work-RoadToUltra.jpg)" alt="大型演唱會網路 - 大佳河濱公園" class="features__box--11 features__box--image--11 features__box--image--right--11"></div>
-          </div>
-        </div>
-        <div class="features__container--11">
-          <div class="container">
-            <div style="background-image: url(img/bg/KK-Work-Show.jpg)" class="features__box--11 features__box--image--11 features__box--image--left--11"></div>
-            <div class="features__box--11 features__box--left-margin--11">
-              <h3 class="features__item_title--11">直播與典禮網路</h3><span class="features__item_text features__item_text--11">提供高度穩定、高密度的網路，把您驚艷的秀即時播送到全世界。</span>
-            </div>
-          </div>
-        </div>
-        <div class="features__container--11">
-          <div class="container">
-            <div class="features__box--11">
-              <h3 class="features__item_title--11">高規格電競比賽</h3><span class="features__item_text features__item_text--11">提供競賽手機或電腦最高品質、穩定的網路服務，確保比賽與直播不間斷。</span>
-            </div>
-            <div style="background-image: url(img/bg/KK-Work-Gaming.jpg)" class="features__box--11 features__box--image--11 features__box--image--right--11"></div>
-          </div>
-        </div>
-        <div class="features__container--11">
-          <div class="container">
-            <div style="background-image: url(img/bg/KK-Work-Google-Pixel3.jpg)" class="features__box--11 features__box--image--11 features__box--image--left--11"></div>
-            <div class="features__box--11 features__box--left-margin--11">
-              <h3 class="features__item_title--11">產品發表記者會</h3><span class="features__item_text features__item_text--11">針對不同的產品情境提供最適合的服務，使您的產品更引人注目。</span>
-            </div>
-          </div>
-        </div>
-        <div class="features__container--11">
-          <div class="container">
-            <div class="features__box--11">
-              <h3 class="features__item_title--11">各類型會議網路</h3><span class="features__item_text features__item_text--11">可針對 200 人至 2,000 人之研討會、高峰會、黑客松等活動，佈建全場高密度無線WiFi供參與者連線使用，並提供高品質線上直播服務。</span>
-            </div>
-            <div style="background-image: url(img/bg/KK-Work-CONF.jpg)" alt="各類型會議網路 - 中央研究院人文社會科學館" class="features__box--11 features__box--image--11 features__box--image--right--11"></div>
-          </div>
-        </div>
-        <div class="features__container--11">
-          <div class="container">
-            <div style="background-image: url(img/bg/KK-Work-You.jpg)" class="features__box--11 features__box--image--11 features__box--image--left--11"></div>
-            <div class="features__box--11 features__box--left-margin--11">
-              <h3 class="features__item_title--11">由你來定義</h3><span class="features__item_text features__item_text--11">若有任何需求，竭誠歡迎來信討論！</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="works works--01">
-        <div class="container">
-          <div class="works__title_box">
-            <div class="works__title">精彩案例</div>
-            <div class="works__text"> </div>
-          </div>
-        </div>
-        <div class="works__row works__row--01">
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-17-Annual-Party.jpg)" alt="直播春酒無線網路" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-Jobs-Exhibition.jpg)" alt="就業博覽會無線網路" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-Asus-ZenFone.jpg)" alt="ASUS 產品發表會" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-AWS.jpg)" alt="AWS Summit Taipei 2017，台北國際會議中心" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-LMSTC.jpg)" alt="職業電競比賽會場臨時有線網路" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-LMSHK.jpg)" alt="職業電競比賽會場臨時有線網路" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-Catgame.jpg)" alt="手機遊戲競賽會場臨時無線網路" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-KP.jpg)" alt="各式競賽場館臨時網路" class="works__item_img works__item_img--01"></div>
-          </works__item>
-        </div>
-        <div class="works__row works__row--01 state-hidden-works-row">
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-CodeForGender.jpg)" alt="駭客松活動會場臨時網路 - 克緹國際大樓" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-CodeForTaiwan.jpg)" alt="Hackathon 活動會場臨時網路" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-LGBT.jpg)" alt="戶外遊行活動臨時無線網路、現場直播臨時網路 - 凱達格蘭大道" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-KnowledgeFest.jpg)" alt="研討會會議臨時無線網路" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-iQiYi.jpg)" alt="戶外展場臨時網路" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-Asahi.jpg)" alt="Asahi 快閃店，微風松高" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-Meitu.jpg)" alt="Meitu 移動快閃店" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-Laravel.jpg)" alt="技術研討會臨時無線網路" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-T2TW.jpg)" alt="節目現場臨時無線網路及線上直播網路，供現場來賓及直播觀眾即時互動 - 華山文創園區烏梅劇院" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-Garena.jpg)" alt="手機遊戲競賽會場臨時無線網路" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-ArenaOfValor.jpg)" alt="手機遊戲競賽會場臨時無線網路" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-ArenaOfValor-Mobile.jpg)" alt="手機遊戲競賽會場臨時無線網路" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-Schroders.jpg)" alt="即時互動會議" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-Garena-GCS.jpg)" alt="傳說對決手遊比賽" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-CallOfDuty.jpg)" alt="Call Of Duty 電競比賽，花博公園流行館" class="works__item_img works__item_img--01"></div>
-          </works__item>
-          <works__item class="works__item--01">
-            <div style="background-image: url(img/bg/KK-Work-FreeFire.jpg)" alt="FreeFire 手遊比賽，華山1914文化創意產業園區" class="works__item_img works__item_img--01"></div>
-          </works__item>
-        </div>
-        <button class="works__show_more_button--01 button button--border-black js-show-more-works">更多案例</button>
-      </div>
-      <div id="contacts" class="contacts--02">
-        <div class="container contacts__container--02">
           <div class="row">
-            <div class="col-md-6 col-xs-12">
-              <h2 class="contacts__title contacts__title--02">解決煩惱，即刻開始！</h2>
-              <form action="https://docs.google.com/a/klickklack.design/forms/d/1Vq9kw6TR6kdYDwAMfN90MKhpSLnlCWSDGh1XYUCPCgs/formResponse" method="POST" class="contacts__form--02">
-                <div class="contacts__form__inputs_box--02">
-                  <input type="text" placeholder="姓名 Name" value="" name="entry_557426517" id="entry_557426517" class="contacts__form__input--02 input input--cloud-border input--white">
-                  <input type="email" required placeholder="電子郵件 E-Mail" value="" name="entry_1257522196" id="entry_1257522196" class="contacts__form__input--02 input input--cloud-border input--white">
-                  <input type="tel" required placeholder="聯絡電話 Phone" value="" name="entry_1331396737" id="entry_1331396737" class="contacts__form__input--02 input input--cloud-border input--white">
-                </div>
-                <textarea required placeholder="請簡單描述您的需求" value="" name="entry_428993157" id="entry_428993157" class="contacts__form_textarea--02 input input--cloud-border input--white"></textarea>
-                <button type="submit" onclick="gtag_report_conversion()" class="contacts__form_button--02 button button--blue button--small-radius">立即預約</button>
-              </form>
+            <p class="title1 black title-p35 title-deco">服務特點</p>
+          </div>
+        </div>
+        <div class="container">
+          <div data-aos="fade-in" class="row">
+            <div class="col-xs-12 col-md-6 col-lg-3 service-div">
+              <div class="mag-icon icon"></div>
+              <h3 class="_title">深度發掘</h3><span class="_text feature_span">傾聽活動內容，深入挖掘您的需求，輔以我們豐富經驗，量身打造最適合的活動網路構建方案。</span>
             </div>
-            <div class="col-lg-3 col-md-5 col-md-offset-1 col-lg-offset-2 col-xs-12">
-              <div class="contacts__info--02">
-                <h2 class="contacts__title contacts__title--02">與我們聯繫</h2>
-                <div class="contacts__item">
-                  <h3 class="contacts__item_title">E-Mail</h3><a href="mailto:service@kkco.com.tw" onclick="gtag_report_conversion()" class="contacts__item_text">service@kkco.com.tw</a>
+            <div class="col-xs-12 col-md-6 col-lg-3 service-div">
+              <div class="code-icon icon"></div>
+              <h3 class="_title">豁然開朗</h3><span class="_text feature_span">依照活動特色及場地特性，進行客製化的網路架構設計，提供穩定與高可靠的網路連線與使用體驗。</span>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 service-div">
+              <div class="gear-icon icon"></div>
+              <h3 class="_title">固若金湯</h3><span class="_text feature_span">採用頂尖網通品牌、近千場活動成功經驗，專業認證工程師輔佐設定調校，提供高可靠的高品質體驗。</span>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 service-div">
+              <div class="talk-icon icon"></div>
+              <h3 class="_title">溝通零時差</h3><span class="_text feature_span">強化與活動場地、電信業者及其他合作廠商之合作協調，規劃設計效率最大化，降低溝通成本。</span>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div id="b2" class="cover-button animated jello delay-3s"><a class="button red">立即預約</a></div>
+        </div>
+      </section>
+      <!-- 情境分享-->
+      <section class="inter-pages p5">
+        <div class="container">
+          <div class="row">
+            <p class="title1 black title-p5 title-deco">情境分享</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <p style="text-align: center; font-size: 18px; width: 100%; padding-top: 0px; padding-bottom: 100px; color: #4d4d4d;">各種活動類型皆有豐富的成功執行經驗</p>
+          </div>
+        </div>
+        <div style="max-width: 1140px; margin: auto;" class="container">
+          <div data-aos="fade-left" data-aos-duration="1000" class="row cases case1">
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock"><img src="images/usecase/KK-uc1-17.jpg" class="uc"></div>
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock txt">
+              <p class="title">高密度 WiFi 環境建置</p>
+              <p>
+                短時間內在活動空間部署高密度 WiFi 系統，使與會者自行攜帶的手機、電腦得以順利連線，提供高穩定度的服務體驗。
+                適合 200~2000 人之中大型研討會、高峰會、網紅直播派對、發表會、實機操作工作坊及黑客松等活動。
+              </p>
+            </div>
+          </div>
+          <div data-aos="fade-right" data-aos-duration="1000" class="row cases case2">
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock txt">
+              <p class="title">產品展示及博覽會</p>
+              <p>在產品發表會、展覽攤位、路演現場，建置綿密的網路環境，使展示之手機/電腦、互動裝置、IoT 設備連接至穩定的網路，提升即時互動性與參觀體驗。</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock"><img src="images/usecase/KK-uc2-meetbao.jpg" class="uc"></div>
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1000" class="row cases case3">
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock"><img src="images/usecase/KK-uc3-hitcon.jpg" class="uc"></div>
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock txt">
+              <p class="title">駭客攻防線下競賽</p>
+              <p>將完整機房設備及基礎建設落地會場，短時間內佈建與資料中心同等級的基礎環境，為駭客攻防競賽帶來穩固可靠的環境，在活動現場建構機房環境不再有困難。</p>
+            </div>
+          </div>
+          <div data-aos="fade-right" data-aos-duration="1000" class="row cases case4">
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock txt">
+              <p class="title">高規格電競賽事</p>
+              <p>提供各式電競賽事最高品質、穩定的網路服務，輔以即時賽事網路監看系統、路由異常監測系統、多重備援設備，確保重要賽事及線上直播不間斷。</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock"><img src="images/usecase/KK-uc4-rr.jpg" class="uc"></div>
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1000" class="row cases case5">
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock"><img src="images/usecase/KK-uc5-ultra.jpg" class="uc"></div>
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock txt">
+              <p class="title">大型戶外活動</p>
+              <p>提供大型路跑、街頭演出、集會遊行，建置公眾無線網路、媒體中心臨時網路環境、網路直播等服務；在網路相對不穩定的戶外環境，我們擁有豐富的佈建經驗。</p>
+            </div>
+          </div>
+          <div data-aos="fade-right" data-aos-duration="1000" class="row cases case6">
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock txt">
+              <p class="title">中大型活動整合建置</p>
+              <p>針對中大型活動，全盤整合網路需求，以強悍的 IT 經驗為活動建置客制網路架構，提供活動各空間網路環境，企業 IT 人員不再為了公司舉辦大型活動而煩惱。</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock"><img src="images/usecase/KK-uc6-AS.jpg" class="uc"></div>
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1000" class="row cases case7">
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock"><img src="images/usecase/KK-uc7-show.jpg" class="uc"></div>
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock txt">
+              <p class="title">直播/典禮/演出網路</p>
+              <p>提供高度穩定、高密度的網路，把您驚艷的秀即時播送到全世界。</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1250" class="row cases case8">
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock txt">
+              <p class="title">由你來定義！</p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-6 ucblock"><img src="images/usecase/KK-uc8-waa.jpg" class="uc"></div>
+          </div>
+        </div>
+      </section>
+      <!-- 案例牆-->
+      <section class="pages p6">
+        <div class="container">
+          <div class="row">
+            <p data-aos="fade-in" class="title2 title-deco">精彩案例</p>
+          </div>
+        </div>
+        <div class="container">
+          <div data-aos="fade-in" data-aos-delay="500" class="row">
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img async-load"></div>
+          </div>
+          <div data-aos="fade-in" data-aos-delay="500" class="row">
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img async-load"></div>
+          </div>
+          <div data-aos="fade-in" data-aos-delay="500" class="row">
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img async-load"></div>
+          </div>
+          <!-- 更多案例-->
+          <div data-aos="fade-in" data-aos-delay="500" class="row">
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img hide async-load"></div>
+          </div>
+          <div data-aos="fade-in" data-aos-delay="500" class="row">
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img hide async-load"></div>
+          </div>
+          <div data-aos="fade-in" data-aos-delay="500" class="row">
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img hide async-load"></div>
+          </div>
+          <div data-aos="fade-in" data-aos-delay="500" class="row">
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img hide async-load"></div>
+          </div>
+          <div data-aos="fade-in" data-aos-delay="500" class="row">
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img hide async-load"></div>
+          </div>
+          <div data-aos="fade-in" data-aos-delay="500" class="row">
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container"><img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img hide async-load"></div>
+            <div class="col-xs-12 col-md-3 col-lg-3 img-container">           <img class="img hide async-load"></div>
+          </div>
+        </div>
+        <div style="padding-top:50px; padding-bottom:50px;"><a id="more_cases" class="button button2">更多案例</a></div>
+      </section>
+      <!-- 聯絡我們-->
+      <section class="pages pkk">
+        <div class="container">
+          <div class="row">
+            <p class="title2">關於我們</p>
+          </div>
+          <div class="row">
+            <div class="contacts col-xs-12 col-md-4 col-lg-4"><img src="images/kkonly.png" style="width: 70%;"></div>
+            <div class="contacts col-xs-12 col-md-8 col-lg-8">
+              <div class="kkdiv">
+                <div class="row">
+                  <p class="title4">可立可股份有限公司</p>
+                </div>
+                <div class="row">
+                  <p class="description">KlickKlack Communications 是 KlickKlack 集團的一員。提供專業的資通訊服務，除了累積了近千場的活動執行經驗之外，也為數十家新創公司建置企業資訊與網路環境，彈性解決方案可隨企業的快速成長給予對應規模的服務，亦針對 NGO 組織提供新世代的網路聯防解決方案。</p>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-md-6 col-lg-6 dept">
+                    <div class="kkg1">
+                      <div class="icon"></div>
+                    </div><a href="https://www.kksec.com.tw" target="_blank" class="kkdept-link">
+                      <div class="kkdept">KK Information Security</div></a>
+                    <div class="kkg1"></div>
+                    <div class="kkdesc">落實滲透測試稽核、監管與風險評估</div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-6 dept">
+                    <div class="kkg1">
+                      <div class="icon"></div>
+                    </div><a href="http://klickklack.design" target="_blank" class="kkdept-link">
+                      <div class="kkdept">KlickKlack Design</div></a>
+                    <div class="kkg1"></div>
+                    <div class="kkdesc">人性娛樂創意互動設計服務</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <footer class="footer footer--05">
-        <div class="footer__description_box--05">
-          <div class="container footer__container"><span class="footer__copyright footer__copyright--05">&copy; KlickKlack Co., Ltd. 2018</span></div>
+      </section>
+      <!-- 聯絡我們-->
+      <section class="pages p4">
+        <div class="container">
+          <div class="row">
+            <div class="contacts col-xs-12 col-md-6 col-lg-6">
+              <p class="title1">解決煩惱，即刻開始！</p>
+              <form class="contacts_form">
+                <div class="contacts__form__inputs_box">
+                  <input id="name" type="text" placeholder="姓名 Name" value="" name="name" class="contacts__form__input input input--cloud-border input--white"><br>
+                  <input id="mail" type="email" required="required" placeholder="電子郵件 E-Mail" value="" name="mail" class="contacts__form__input input input--cloud-border input--white"><br>
+                  <input id="phone" type="tel" required="required" placeholder="聯絡電話 Phone" value="" name="phone" class="contacts__form__input input input--cloud-border input--white"><br>
+                  <input id="type" type="hidden" required="required" value="event" name="type">
+                </div>
+                <textarea id="description" required="required" placeholder="請簡單描述您的需求" value="" name="description" class="contacts__form_textarea input input--cloud-border input--white"></textarea><br>
+                <button type="button" id="contact_submit_btn" style="display:none" onclick="submit_inquire()" class="contacts__form_button button blue button--blue button--small-radius">立即預約</button>
+              </form>
+            </div>
+            <div class="contacts col-xs-12 col-md-6 col-lg-6">
+              <div class="contacts-div">
+                <p class="title1">與我們聯繫</p>
+                <p class="contact_title">技術支援專線</p>
+                <p class="contact_desc">+886-2-8101-0<span style="font-weight:bold; font-size:16px;">119 </span></p>
+                <p class="contact_title">顧客服務專線</p>
+                <p class="contact_desc">+886-2-2375-7775</p>
+                <p class="contact_title">顧客服務信箱</p>
+                <p class="contact_desc">service@kkco.com.tw</p>
+                <p class="contact_title">公司通訊地址</p>
+                <p class="contact_desc"> <a href="https://goo.gl/maps/xkisZAckG9hKap6R7">100 台北市中正區重慶南路一段57號8樓之5</a></p>
+              </div>
+            </div>
+          </div>
         </div>
-      </footer>
-    </main>
+      </section>
+    </div>
+    <div class="fc">
+      <div class="footer container">
+        <div style="display:flex; align-items: center; justify-content: center;">
+          <div class="footer-logo"><img src="images/logo.png" style="height:32px;"></div>
+          <div class="footer-privacy"><a href="javascript:void(0)" onclick="show_privacy(); return false;" style="text-decoration: none; color:white; font-family: 'Montserrat', sans-serif;font-weight: 700; text-transform: uppercase; font-size: 11px; letter-spacing: 0.05em; color: white;">Privacy</a></div>
+          <div class="footer-en"><span>English</span></div>
+          <div class="footer-fb"><img src="images/fblogo.svg" style="width:20px; height:20px;"></div>
+        </div>
+        <div style="display:flex ; align-items: center; justify-content: center;">
+          <div class="footer-copyright">© KlickKlack Co., Ltd. 2019</div>
+          <dv style="float:right; text-align:right;" class="footer-kkgroup"><img src="https://www.kksec.com.tw/img/logo/a-klickklack-member-300dpi.png" style="height:15px;"></dv>
+        </div>
+      </div>
+    </div>
+    <script>
+      //init AOS
+      AOS.init({
+        delay: 300,
+        duration: 1000
+      });
+    </script>
   </body>
-  <div class="js-overlay js-close-navigation js-close-menu overlay"></div>
 </html>

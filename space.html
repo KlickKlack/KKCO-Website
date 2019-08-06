@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="專業的網路解決方案">
+    <meta property="og:site_name" content="可立可股份有限公司 KlickKlack Communications">
+    <meta property="og:title" content="KlickKlack Communications ｜ 專業的網路解決方案">
+    <meta property="og:description" content="KlickKlack Communications 是 KlickKlack 集團的一員。提供專業的資通訊服務，除了累積了近千場的活動執行經驗之外，也為數十家新創公司建置企業資訊與網路環境，彈性解決方案可隨企業的快速成長給予對應規模的服務，亦針對 NGO 組織提供新世代的網路聯防解決方案。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.kkco.com.tw">
+    <meta property="og:image" content="http://www.kkco.com.tw/img/og_image.png">
+    <meta property="og:image:secure_url" content="https://www.kkco.com.tw/img/og_image.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="4043">
+    <meta property="og:image:height" content="670">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>KlickKlack Communications ｜ 專業的網路解決方案</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/main_space.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/contacts_space.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/rwd.css">
+    <link rel="stylesheet" type="text/css" href="css/cb_slides2.css">
+    <!-- FA-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- SWAL2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <link rel="stylesheet" type="text/css" href="css/particlejs_style.css">
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+    <!-- reCaptcha v3-->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdYMakUAAAAABfgxjfVxbx7tBZCD8nXk5Fulgqr"></script>
+    <script>
+      let grecaptcha_token = ""
+      grecaptcha.ready(function() {
+        grecaptcha.execute('6LdYMakUAAAAABfgxjfVxbx7tBZCD8nXk5Fulgqr', {action: 'homepage'}).then(function(token) {
+          grecaptcha_token = token
+          document.getElementById('contact_submit_btn').style.display = '';
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="navbar-container">
+      <div class="navbar">
+        <div class="links">
+          <ul>
+            <li class="logo"><img src="images/logo_new.png" alt="klickklack communications logo" class="logo-pic"></li>
+            <li><a href="index.html"> <i class="fa fa-fw fa-street-view"></i>For Event</a></li>
+            <li><a href="space.html"> <i class="fa fa-fw fa-home"></i>For Space</a></li>
+            <li>
+              <div style="position: absolute; height:20px; width:100px; margin-left: 4%; margin-top: -15px;"><sup style="font-size:10px; color: gray;">Coming Soon</sup></div><span style="color: white;"><i class="fa fa-fw fa-building"></i>For NGO </span>
+            </li>
+            <li><a href="#" id="contact-us"><i class="fa fa-fw fa-envelope"></i>聯絡我們</a></li>
+            <li>
+              <div class="nav-icon">
+                <div></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="particle_container">
+        <!-- particles.js container-->
+        <div id="particles-js"></div>
+        <!-- stats - count particles-->
+        <div class="count-particles"><span class="js-count-particles">--</span> particles</div>
+        <div class="landscape-div">
+          <!--img.logo(src='images/logo.png', title='Klickklack', alt='')-->
+          <p class="landscape-title">部署空間網路環境</p>
+          <p class="landscape-title">就像使用雲端服務般彈性</p>
+          <div id="know-more" class="cover-button animated pulse"><a class="button">了解更多</a></div>
+        </div>
+        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js-->
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <!-- stats.js lib-->
+        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+        <script src="js/particlejs_script.js"></script>
+      </div>
+      <section class="pages p1">
+        <p class="title-p1">服務項目</p>
+        <div class="container">
+          <div data-aos="fade-in" class="row">
+            <div class="col">
+              <p style="padding-top:300px; text-align:center;">針對企業辦公室、共用工作空間、展演場所</p>
+              <p style="text-align:center;">部署完整的網路解決方案、高密度無線網路系統</p>
+              <p style="text-align:center;">輔以專業認證工程師維運，創造優質的空間網路服務體驗</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pages p1">
+        <p class="title-p1">服務特色</p>
+      </section>
+      <section class="inter-pages p35">
+        <div class="container">
+          <div data-aos="fade-in" class="row">
+            <div class="col-xs-12 col-md-6 col-lg-3 feature-div">
+              <div class="mag-icon icon"></div>
+              <h3 class="_title">國際標準</h3><span class="_text feature_span">使用與資料中心相同的認證標準、知名機房佈線品牌，由經驗豐富的認證工程師規劃、設計、執行，並提供完整的纜線測試報告，別讓不合格的基礎建設雷到你。</span>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 feature-div">
+              <div class="code-icon icon"></div>
+              <h3 class="_title">擁有彈性</h3><span class="_text feature_span">像是租用雲端服務般，不必自行採購硬體，不再擔心硬體汰舊、攤提等問題，隨時依成長規模彈性調整服務內容，將錢花在刀口上，讓您專注在核心營運工作。</span>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 feature-div">
+              <div class="gear-icon icon"></div>
+              <h3 class="_title">品質保證</h3><span class="_text feature_span">針對服務皆有自動檢驗機制，並有經驗豐富的團隊做日常維運，障礙發生第一時間快速介入排除，不再擔心企業內部沒有專人維護設備。</span>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3 feature-div">
+              <div class="talk-icon icon"></div>
+              <h3 class="_title">客製需求</h3><span class="_text feature_span">混合雲網路架構、網際網路路由障礙跳脫、開發者特殊環境模擬、多重備援機制，其他資訊系統皆可客製化整合。</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 客戶分享-->
+      <section class="inter-pages p5">
+        <div class="container">
+          <div class="row">
+            <p class="title1 black title-p5 title-deco">客戶案例分享</p>
+          </div>
+        </div>
+        <div style=" margin: auto;" class="container">
+          <div data-aos="fade-up" class="row">
+            <div class="col-md-offset-3 col-md-3"><img src="images/p1p-customers/ShopBack_Logo-red-square.png" class="cc"></div>
+            <div class="col-md-9">
+              <p class="text-left title ta">Shopback</p>
+              <p class="text-left content ta">對於公司內部沒有 IT 專才來說，把網路交給可立可，就像有整個 IT 部門在幫你維護公司網路，對於各種網路需求及問題排除，都相當專業且快速。-- ShopBack</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="row">
+            <div class="col-md-offset-3 col-md-3"><img src="images/p1p-customers/aia_logo_square.png" class="cc"></div>
+            <div class="col-md-9">
+              <p class="text-left title ta">台灣人工智慧學校</p>
+              <p class="text-left content ta">人工智慧技術人才培訓課程中，常有大量網路使用需求，可立可提供的無線網路系統讓學校的課程得以順利進行。-- AIA</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="pcustomer container">
+        <div class="row">
+          <p class="title1 black title-p5 title-deco">精選客戶</p>
+        </div>
+        <div class="row">
+          <div class="col"><img src="images/p1p-customers/ShopBack_Logo-red-square.png"></div>
+          <div class="col"><img src="images/p1p-customers/Dcard_logo_blue.png" style="width:180px;"></div>
+          <div class="col"><img src="images/p1p-customers/aia_logo_square.png"></div>
+          <div class="col"><img src="images/p1p-customers/bincentive_logo.png"></div>
+        </div>
+        <div class="row">
+          <div class="col"><img src="images/p1p-customers/voicetube_logo.png"></div>
+          <div class="col"><img src="images/p1p-customers/DINNGO_logo_rgb.jpg" style="width:20  gw0px;"></div>
+          <div class="col"><img src="images/p1p-customers/bithub_logo.jpg"></div>
+        </div>
+      </div>
+      <!-- 聯絡我們-->
+      <section class="pages pkk">
+        <div class="container">
+          <div class="row">
+            <p class="title2">關於我們</p>
+          </div>
+          <div class="row">
+            <div class="contacts col-xs-12 col-md-4 col-lg-4"><img src="images/kkonly.png" style="width: 70%;"></div>
+            <div class="contacts col-xs-12 col-md-8 col-lg-8">
+              <div class="kkdiv">
+                <div class="row">
+                  <p class="title4">可立可股份有限公司</p>
+                </div>
+                <div class="row">
+                  <p class="description">KlickKlack Communications 是 KlickKlack 集團的一員。提供專業的資通訊服務，除了累積了近千場的活動執行經驗之外，也為數十家新創公司建置企業資訊與網路環境，彈性解決方案可隨企業的快速成長給予對應規模的服務，亦針對 NGO 組織提供新世代的網路聯防解決方案。</p>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-md-6 col-lg-6 dept">
+                    <div class="kkg1">
+                      <div class="icon"></div>
+                    </div><a href="https://www.kksec.com.tw" target="_blank" class="kkdept-link">
+                      <div class="kkdept">KK Information Security</div></a>
+                    <div class="kkg1"></div>
+                    <div class="kkdesc">落實滲透測試稽核、監管與風險評估</div>
+                  </div>
+                  <div class="col-xs-12 col-md-6 col-lg-6 dept">
+                    <div class="kkg1">
+                      <div class="icon"></div>
+                    </div><a href="http://klickklack.design" target="_blank" class="kkdept-link">
+                      <div class="kkdept">KlickKlack Design</div></a>
+                    <div class="kkg1"></div>
+                    <div class="kkdesc">人性娛樂創意互動設計服務</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 聯絡我們-->
+      <section class="pages p4">
+        <div class="container">
+          <div class="row">
+            <div class="contacts col-xs-12 col-md-6 col-lg-6">
+              <p class="title1">解決煩惱，即刻開始！</p>
+              <form class="contacts_form">
+                <div class="contacts__form__inputs_box">
+                  <input id="name" type="text" placeholder="姓名 Name" value="" name="name" class="contacts__form__input input input--cloud-border input--white"><br>
+                  <input id="mail" type="email" required="required" placeholder="電子郵件 E-Mail" value="" name="mail" class="contacts__form__input input input--cloud-border input--white"><br>
+                  <input id="phone" type="tel" required="required" placeholder="聯絡電話 Phone" value="" name="phone" class="contacts__form__input input input--cloud-border input--white"><br>
+                  <input id="type" type="hidden" required="required" value="space" name="type">
+                </div>
+                <textarea id="description" required="required" placeholder="請簡單描述您的需求" value="" name="description" class="contacts__form_textarea input input--cloud-border input--white"></textarea><br>
+                <button type="button" id="contact_submit_btn" style="display:none" onclick="submit_inquire()" class="contacts__form_button button blue button--blue button--small-radius">立即預約</button>
+              </form>
+            </div>
+            <div class="contacts col-xs-12 col-md-6 col-lg-6">
+              <div class="contacts-div">
+                <p class="title1">與我們聯繫</p>
+                <p class="contact_title">技術支援專線</p>
+                <p class="contact_desc">+886-2-8101-0<span style="font-weight:bold; font-size:16px;">119 </span></p>
+                <p class="contact_title">顧客服務專線</p>
+                <p class="contact_desc">+886-2-2375-7775</p>
+                <p class="contact_title">顧客服務信箱</p>
+                <p class="contact_desc">service@kkco.com.tw</p>
+                <p class="contact_title">公司通訊地址</p>
+                <p class="contact_desc"> <a href="https://goo.gl/maps/xkisZAckG9hKap6R7">100 台北市中正區重慶南路一段57號8樓之5</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="fc">
+      <div class="footer container">
+        <div style="display:flex; align-items: center; justify-content: center;">
+          <div class="footer-logo"><img src="images/logo.png" style="height:32px;"></div>
+          <div class="footer-privacy"><a href="javascript:void(0)" onclick="show_privacy(); return false;" style="text-decoration: none; color:white; font-family: 'Montserrat', sans-serif;font-weight: 700; text-transform: uppercase; font-size: 11px; letter-spacing: 0.05em; color: white;">Privacy</a></div>
+          <div class="footer-en"><span>English</span></div>
+          <div class="footer-fb"><img src="images/fblogo.svg" style="width:20px; height:20px;"></div>
+        </div>
+        <div style="display:flex ; align-items: center; justify-content: center;">
+          <div class="footer-copyright">© KlickKlack Co., Ltd. 2019</div>
+          <dv style="float:right; text-align:right;" class="footer-kkgroup"><img src="https://www.kksec.com.tw/img/logo/a-klickklack-member-300dpi.png" style="height:15px;"></dv>
+        </div>
+      </div>
+    </div>
+    <script>
+      //init AOS
+      AOS.init({
+        delay: 300,
+        duration: 1000
+      });
+    </script>
+  </body>
+</html>
