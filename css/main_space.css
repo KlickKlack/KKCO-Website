@@ -353,6 +353,9 @@ html, body {
       margin-bottom: 20px;
       vertical-align: middle;
       margin: 0 auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
   }
 
   .uc {
