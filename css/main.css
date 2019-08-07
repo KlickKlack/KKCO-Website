@@ -11,7 +11,7 @@ body {
 
 @font-face {
   font-family: 'TaipeiSansTCBeta-Regular';
-  src:  url('TaipeiSansTCBeta-Regular.woff2') format('woff2');
+  src:  url('../fonts/TaipeiSansTCBeta-Regular.woff2') format('woff2');
 }
 
 html, body {

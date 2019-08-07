@@ -411,6 +411,21 @@ p.contact_desc > a {
   line-height:18px;
   letter-spacing:0.05em;
 }
+
+.footer-links {
+  text-decoration: none;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
+
+.footer-links:hover {
+  text-decoration: none;
+  color:white;
+}
 .cover-button > a {
     background-color: rgba(255,255,255,0);
 }
@@ -427,7 +442,7 @@ body {
 
 @font-face {
   font-family: 'TaipeiSansTCBeta-Regular';
-  src:  url('TaipeiSansTCBeta-Regular.woff2') format('woff2');
+  src:  url('../fonts/TaipeiSansTCBeta-Regular.woff2') format('woff2');
 }
 
 html, body {
@@ -1675,6 +1690,7 @@ html, body {
     border:0px;
     margin-top:20px;
     width:100%;
+    font-size: 16px;
 }
 
 .button:hover{
