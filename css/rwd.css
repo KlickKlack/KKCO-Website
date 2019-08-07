@@ -235,6 +235,11 @@
   .title4 {
     text-align: center;
   }
+
+  .pkk > .container > .row > p.title2 {
+    padding-top:50px;
+    padding-bottom:5px;
+  }
 }
 
 @media only screen and (max-width: 700px) {

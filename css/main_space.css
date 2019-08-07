@@ -63,6 +63,15 @@ html, body {
   transition: all 0.3s ease;
 }
 
+.feature-div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.customers-row {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
 
 .landscape-div {
     display: inline-block;
@@ -342,6 +351,8 @@ html, body {
       width:120px;
       margin-top: 20px;
       margin-bottom: 20px;
+      vertical-align: middle;
+      margin: 0 auto;
   }
 
   .uc {
@@ -388,7 +399,9 @@ html, body {
 
   .title.ta {
     font-size: 22px;
-    margin-top:40px;
+    line-height: 30px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .content.ta {
     color: gray;
