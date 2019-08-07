@@ -176,8 +176,6 @@ function show_privacy(e) {
 
 //送出表單
 function submit_inquire()  {
-    console.log(grecaptcha_token)
-
     $.ajax({
         url: config.api_uri,
         method: "POST",
@@ -196,8 +194,7 @@ function submit_inquire()  {
         var errmsg = '';
 
         if (success) {
-            console.log(res.data.score)
-            if (res.data.score < 0.5 )
+            if (res.data.score < 0.3 )
                 //失敗
                 Swal.fire(
                     '送出失敗',
