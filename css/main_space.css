@@ -48,6 +48,7 @@ html, body {
     border:0px;
     margin-top:20px;
     width:100%;
+    font-size: 16px;
 }
 
 .button:hover{
