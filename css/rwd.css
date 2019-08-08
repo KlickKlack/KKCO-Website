@@ -240,6 +240,11 @@
     padding-top:50px;
     padding-bottom:5px;
   }
+
+  .contacts-div {
+    max-width: 100%;
+    margin-left: 0px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -345,10 +350,6 @@
   .ucblock > p.title {
     font-size:20px;
     margin-top: -30px;
-  }
-
-  .contacts-div {
-    margin-left:50px;
   }
 
   .footer.container > div {
