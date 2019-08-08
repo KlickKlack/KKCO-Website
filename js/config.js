@@ -35,7 +35,6 @@ var appConfig={
         {"uri":'images/caseimg-layer2/KK-Work-GCS2-m2x.jpg', "alt":"知名手遊職業競賽@內湖網球中心"},
         {"uri":'images/caseimg-layer2/KK-Work-GCSMONITOR-m2x.jpg', "alt":"為知名手遊職業競賽進行賽事即時監控"},
         {"uri":'images/caseimg-layer2/KK-Work-HearthStone-m2x.jpg', "alt":"知名遊戲品牌辦理明星賽@和平籃球館"},
-        {"uri":'images/caseimg-layer2/KK-Work-Hitcon-Defense-m2x.jpg', "alt":"辦理資安攻防戰@臺北文創會所"},
         {"uri":'images/caseimg-layer2/KK-Work-Hitcon-Office-m2x.jpg', "alt":"密室脫逃活動@文化大學推廣部"},
         {"uri":'images/caseimg-layer2/KK-Work-Huawei-m2x.jpg', "alt":"知名手機品牌辦理產品體驗活動@台灣各地多處巡迴"},
         {"uri":'images/caseimg-layer2/KK-Work-iQiYi-m2x.jpg', "alt":"知名品牌辦理體驗活動@台灣各地多處巡迴"},
