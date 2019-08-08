@@ -381,6 +381,11 @@
     height: auto;
   }
 
+
+  .ucblock.txt.long {
+    padding-top: 30px;
+  }
+
 }
 
 @media only screen and (max-width: 404px) {
