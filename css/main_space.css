@@ -561,10 +561,6 @@ html, body {
     transform: scale(0);
   }
 
-  .grecaptcha-badge {
-    opacity: 0;
-  }
-
   .pcustomer {
     background-color: white;
     width:100%;

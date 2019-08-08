@@ -99,6 +99,9 @@
         grecaptcha.execute('6LdYMakUAAAAABfgxjfVxbx7tBZCD8nXk5Fulgqr', {action: 'homepage'}).then(function(token) {
           grecaptcha_token = token
           document.getElementById('contact_submit_btn').style.display = '';
+          var gr_div = $( ".grecaptcha-badge" ).parent();
+          gr_div.css( "width", "0px" );
+          gr_div.css( "height", "0px" );
         });
       });
     </script>
