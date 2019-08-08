@@ -583,3 +583,10 @@ html, body {
     max-width:250px;
     max-height:120px;
   }
+
+  .grecaptcha-badge {
+    width: 0px !important;
+    height: 0px !important;;
+    opacity: 0;
+    left: 0px !important;  
+  }

@@ -577,7 +577,7 @@ to   { opacity: 1; }
   .nav-icon:hover div {
     transform: scale(0);
   }
-  
+
   ._title {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -591,4 +591,11 @@ to   { opacity: 1; }
   .service-div {
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+
+  .grecaptcha-badge {
+    width: 0px !important;
+    height: 0px !important;;
+    opacity: 0;
+    left: 0px !important;  
   }
