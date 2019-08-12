@@ -202,6 +202,11 @@
       opacity: 0.25;
   }
 
+  .ucblock {
+    flex: none;
+    max-width: none;
+  }
+
   .ucblock.txt {
     position: absolute;
     color: white;
@@ -210,6 +215,8 @@
     padding: 60px;
     padding-left: 140px;
     padding-right: 140px;
+    flex: none;
+    max-width: none;
   }
 
   .contacts {
