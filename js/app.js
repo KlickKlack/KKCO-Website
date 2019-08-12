@@ -99,19 +99,19 @@ $(document).ready(function() {
     //聯絡我們
     $("#contact-us").click(function() {
         $('html,body').animate({
-            scrollTop: $(".contacts").offset().top},
+            scrollTop: $(".contacts_form").offset().top},
             1500);
     }); 
     
     $("#b1").click(function() {
         $('html,body').animate({
-            scrollTop: $(".contacts").offset().top},
+            scrollTop: $(".contacts_form").offset().top},
             1000);
     }); 
 
     $("#b2").click(function() {
         $('html,body').animate({
-            scrollTop: $(".contacts").offset().top},
+            scrollTop: $(".contacts_form").offset().top},
             700);
     });
 
