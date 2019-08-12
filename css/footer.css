@@ -28,6 +28,17 @@
   float:left;
 }
 
+.footer-career > a {
+  text-decoration: none;
+  color:white;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
 .footer-en > a {
   text-decoration: none;
   color:white;

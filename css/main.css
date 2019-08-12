@@ -9,11 +9,6 @@ body {
     overflow-x: hidden;
 }
 
-@font-face {
-  font-family: 'TaipeiSansTCBeta-Regular';
-  src:  url('../fonts/TaipeiSansTCBeta-Regular.woff2') format('woff2');
-}
-
 html, body {
   overflow-x: hidden;
 }
@@ -93,7 +88,7 @@ html, body {
     display: inline-block;
     font-size: 60px;
     opacity: 1;
-    font-family: 'TaipeiSansTCBeta-Regular', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
     color: white;
     vertical-align: middle;
     text-align: center;
@@ -113,7 +108,7 @@ html, body {
     font-size: 1em;
     letter-spacing: 0.1em;
     opacity: 1;
-    font-family: 'TaipeiSansTCBeta-Regular', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
     color: white;
     margin: 0 auto;
     vertical-align: middle;
@@ -144,7 +139,7 @@ html, body {
 .title1 {
     font-size: 44px;
     opacity: 0.85;
-    font-family: 'TaipeiSansTCBeta-Regular', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
     color: black;
     margin: 0 auto;
     vertical-align: middle;
@@ -165,7 +160,7 @@ html, body {
 .title2 {
     font-size: 40px;
     opacity: 0.75;
-    font-family: 'TaipeiSansTCBeta-Regular', sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
     font-weight: bolder;
     color: black;
     margin: 0 auto;
