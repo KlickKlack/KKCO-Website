@@ -3,48 +3,81 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>404 Page Not found</title>
-    <style>
-      body {
-        background-color:black;
-        color:white;
-      }
-
-      .title {
-        font-size:100px;
-        font-weight:bold;
-        text-align:center;
-        letter-spacing: 12px;
-      }
-
-      .button {
-        width: 100px;
-        height: 20px;
-        display: block;
-        background-color: white;
-        border-radius: 10px;
-        margin: 0 auto;
-        padding: 10px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-      }
-
-      .back {
-        color: black;
-        text-decoration: none;
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        font-size:24px;
-      }
-
-    </style>
+    <meta name="description" content="KlickKlack Communications 是 KlickKlack 集團的一員。提供專業的資通訊服務，除了累積了近千場的活動執行經驗之外，也為數十家新創公司建置企業資訊與網路環境，彈性解決方案可隨企業的快速成長給予對應規模的服務，亦針對 NGO 組織提供新世代的網路聯防解決方案。">
+    <meta property="og:site_name" content="可立可股份有限公司 KlickKlack Communications">
+    <meta property="og:title" content="KlickKlack Communications ｜ 專業的網路解決方案">
+    <meta property="og:description" content="KlickKlack Communications 是 KlickKlack 集團的一員。提供專業的資通訊服務，除了累積了近千場的活動執行經驗之外，也為數十家新創公司建置企業資訊與網路環境，彈性解決方案可隨企業的快速成長給予對應規模的服務，亦針對 NGO 組織提供新世代的網路聯防解決方案。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.kkco.com.tw">
+    <meta property="og:image" content="http://www.kkco.com.tw/images/og_image.png">
+    <meta property="og:image:secure_url" content="https://www.kkco.com.tw/images/og_image.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="4043">
+    <meta property="og:image:height" content="670">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>404 Not Found</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/rwd.css">
+    <link rel="stylesheet" type="text/css" href="css/gr.css">
+    <!-- FA-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- SWAL2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <link rel="stylesheet" type="text/css" href="css/particlejs_style_ngo.css">
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
   </head>
   <body>
-    <p class="title">404</p>
-    <h1 style="text-align:center;">Page Not Found!</h1>
-    <div class="button">
-        <a class="back" href="/">Back</a>
+    <div class="navbar-container">
+      <div class="navbar">
+        <div class="links">
+          <ul>
+            <li class="logo"><img src="images/logo_new.png" alt="klickklack communications logo" class="logo-pic"></li>
+            <li><a href="index.html"> <i class="fa fa-fw fa-street-view"></i>For Event</a></li>
+            <li><a href="space.html"> <i class="fa fa-fw fa-home"></i>For Space</a></li>
+            <li>
+              <div style="position: absolute; height:20px; width:100px; margin-left: 4%; margin-top: -15px;"><sup style="font-size:10px; color: gray;">Coming Soon</sup></div><span style="color: white;"><i class="fa fa-fw fa-building"></i>For NGO </span>
+            </li>
+            <li><a href="#" id="contact-us"><i class="fa fa-fw fa-envelope"></i>聯絡我們</a></li>
+            <li>
+              <div class="nav-icon">
+                <div></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="height:80vh; background-color:black;" class="contents">
+      <div style="font-size:100px; color:#a4a4a4; margin:0 auto; letter-spacing: 20px; height:80vh; line-height:70vh;">404</div>
+    </div>
+    <div class="fc">
+      <div class="footer container">
+        <div style="display:flex; align-items: center; justify-content: center;">
+          <div class="footer-logo"><img src="images/logo.png" style="height:32px;"></div>
+          <div class="footer-privacy"><a href="javascript:void(0)" onclick="show_privacy(); return false;" class="footer-links">Privacy</a></div>
+          <div class="footer-en"><span class="footer-links">English</span></div>
+          <div class="footer-career"><a href="https://www.104.com.tw/company/1a2x6bk91z" target="_blank" class="footer-links">Career</a></div>
+          <div class="footer-fb"><a href="https://www.facebook.com/KlickKlackTaiwan/" target="_blank"><img src="images/fblogo.svg" style="width:20px; height:20px;"></a></div>
+        </div>
+        <div style="display:flex ; align-items: center; justify-content: center;">
+          <div class="footer-copyright">© KlickKlack Co., Ltd. 2019</div>
+          <dv style="float:right; text-align:right;" class="footer-kkgroup"><img src="https://www.kksec.com.tw/img/logo/a-klickklack-member-300dpi.png" style="height:15px;"></dv>
+        </div>
+      </div>
     </div>
   </body>
 </html>
