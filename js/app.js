@@ -7,6 +7,21 @@ var preloaded_images = [];
 // init event
 $(document).ready(function() {
 
+    var forms = document.getElementsByClassName('needs-validation');
+    
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+        event.stopPropagation();
+        event.preventDefault();
+        submit_inquire();
+      }, false);
+    });
+
     //處理案例上圖
     function load_cases_pic() {
         var cases_pic = $(".img")
@@ -176,6 +191,7 @@ function show_privacy(e) {
 
 //送出表單
 function submit_inquire()  {
+
     $.ajax({
         url: config.api_uri,
         method: "POST",

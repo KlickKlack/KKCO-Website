@@ -39,7 +39,7 @@
     <!-- SWAL2-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="js/config.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.js?v=20190814"></script>
     <!-- gtag and fb pixel-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-73946831-4"></script>
     <script>
@@ -359,15 +359,19 @@
           <div class="row">
             <div class="contacts contacts_form col-xs-12 col-md-6 col-lg-6">
               <p class="title1">解決煩惱，即刻開始！</p>
-              <form class="contacts_form">
+              <form class="contacts_form needs-validation">
                 <div class="contacts__form__inputs_box">
                   <input id="name" type="text" placeholder="姓名 Name" value="" name="name" class="contacts__form__input input input--cloud-border input--white"><br>
                   <input id="mail" type="email" required="required" placeholder="電子郵件 E-Mail" value="" name="mail" class="contacts__form__input input input--cloud-border input--white"><br>
                   <input id="phone" type="tel" required="required" placeholder="聯絡電話 Phone" value="" name="phone" class="contacts__form__input input input--cloud-border input--white"><br>
                   <input id="type" type="hidden" required="required" value="event" name="type">
                 </div>
-                <textarea id="description" required="required" placeholder="請簡單描述您的需求" value="" name="description" class="contacts__form_textarea input input--cloud-border input--white"></textarea><br>
-                <button type="button" id="contact_submit_btn" style="display:none" onclick="submit_inquire()" class="contacts__form_button button blue button--blue button--small-radius">立即預約</button>
+                <textarea id="description" required="required" placeholder="請簡單描述您的需求" value="" name="description" class="contacts__form_textarea input input--cloud-border input--white"></textarea>
+                <div style="text-align:left;">
+                  <input type="checkbox" name="agree_privacy_policy" checked="" id="agree_checkbox" required="required">
+                  <label style="font-size: 12px">我同意<a href="/privacy/" target="_blank" onclick="show_privacy(); return false;" style="color:black; padding-left:4px; padding-right:4px;">隱私權政策</a>並願意收到更多資訊</label>
+                </div>
+                <button type="submit" id="contact_submit_btn" style="display:none" class="contacts__form_button button blue button--blue button--small-radius">立即預約</button>
               </form>
             </div>
             <div class="contacts col-xs-12 col-md-6 col-lg-6">
