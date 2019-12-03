@@ -39,7 +39,7 @@
     <!-- SWAL2-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="js/config.js"></script>
-    <script src="js/app.js?v=20190814"></script>
+    <script src="js/app.js?v=20191203"></script>
     <!-- gtag and fb pixel-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-73946831-4"></script>
     <script>
@@ -131,13 +131,24 @@
     <div class="contents">
       <section class="pages p0">
         <ul class="cb-slideshow">
+          <li>
+            <div class="movie-container">
+              <div class="overlay"></div>
+              <div style="background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEklEQVQImWNgwAP+QzFhQcIAAP1rA/1zAe0/AAAAAElFTkSuQmCC) repeat;" class="overlay2"></div>
+              <video id="bg_video" playsinline="playsinline" autoplay="autoplay" muted="muted"></video>
+            </div>
+            <div id="mute-icon">
+              <div id="mute_txt">sound off</div>
+              <!--img(id="mute_icon_img" src="images/mute.svg" alt="mute/unmute" title="toggle video sound")-->
+            </div>
+          </li>
           <li><span>image_1</span></li>
           <li><span>image_2</span></li>
           <li><span>image_3</span></li>
           <li><span>image_4</span></li>
           <div class="landscape-div">
-            <p class="landscape-title">最專業的活動網路解決方案</p>
-            <div id="b1" class="cover-button animated pulse"><a class="button">立即預約</a></div>
+            <p class="landscape-title"> </p>
+            <div id="b1" class="cover-button animated pulse"><a class="button"> </a></div>
           </div>
         </ul>
       </section>
