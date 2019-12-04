@@ -4,6 +4,24 @@ var config = appConfig;
 //Images
 var preloaded_images = [];
 
+var time_s = 0;
+var time_e = 0;
+var time_diff = 0;
+//register events
+document.addEventListener("DOMContentLoaded", function(){
+    // DOM Ready!
+    console.log('dom ready');
+    time_s = Math.floor(new Date().getTime()/1000);
+});
+
+window.addEventListener("load", function(event) {
+    // All resources finished loading!
+    console.log('page load ok');
+    time_e = Math.floor(new Date().getTime()/1000);
+    time_diff = time_e - time_s;
+    console.log('page load time diff = '+time_diff);
+});
+
 // init event
 $(document).ready(function() {
     var rnd = Math.random();
@@ -306,9 +324,10 @@ function load_bg_video() {
     } else {
         video_res = '540p';
     }*/
-
+    var if_uri = '<iframe src="https://player.vimeo.com/video/377211822?background=1" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%" allow="autoplay; fullscreen" allowfullscreen></iframe>';
+    video.append(if_uri);
     //video.append("<source src='video/MOVINGSTAGE_5G_"+video_res+".mp4' type='video/mp4' >");    
-    video.append("<source src='video/movingstage_5g_full.mp4' type='video/mp4' >");
+    //video.append("<source src='video/movingstage_5g_full.mp4' type='video/mp4' >");
 
 }
 
@@ -333,4 +352,43 @@ function load_slides(is_5g) {
     $('ul.cb-slideshow li').addClass('slides');
     $('ul.cb-slideshow li:first-child').remove();
     $(".cb-slideshow").addClass('animated');
+}
+
+function speedtest() {
+
+    var arrTimes = [];
+    var i = 0; // start
+    var timesToTest = 5;
+    var tThreshold = 150; //ms
+    var testImage = "http://www.google.com/images/phd/px.gif"; // small image in your server
+    var dummyImage = new Image();
+    var isConnectedFast = false;
+
+    testLatency(function(avg){
+    isConnectedFast = (avg <= tThreshold);
+    /** output */
+    document.body.appendChild(
+        document.createTextNode("Time: " + (avg.toFixed(2)) + "ms - isConnectedFast? " + isConnectedFast)
+    );
+    });
+
+    /** test and average time took to download image from server, called recursively timesToTest times */
+    function testLatency(cb) {
+    var tStart = new Date().getTime();
+    if (i<timesToTest-1) {
+        dummyImage.src = testImage + '?t=' + tStart;
+        dummyImage.onload = function() {
+        var tEnd = new Date().getTime();
+        var tTimeTook = tEnd-tStart;
+        arrTimes[i] = tTimeTook;
+        testLatency(cb);
+        i++;
+        };
+    } else {
+        /** calculate average of array items then callback */
+        var sum = arrTimes.reduce(function(a, b) { return a + b; });
+        var avg = sum / arrTimes.length;
+        cb(avg);
+    }
+    }
 }
