@@ -10,16 +10,13 @@ var time_diff = 0;
 //register events
 document.addEventListener("DOMContentLoaded", function(){
     // DOM Ready!
-    console.log('dom ready');
     time_s = Math.floor(new Date().getTime()/1000);
 });
 
 window.addEventListener("load", function(event) {
     // All resources finished loading!
-    console.log('page load ok');
     time_e = Math.floor(new Date().getTime()/1000);
     time_diff = time_e - time_s;
-    console.log('page load time diff = '+time_diff);
 });
 
 // init event
@@ -157,18 +154,14 @@ $(document).ready(function() {
         var video_dom = document.getElementById("bg_video");
         video_dom.muted = !video_dom.muted;
 
-
-        var vimeo_iframe = $('#vimeo_player')[0];
-        var player = $f(vimeo_iframe);
-    
-        player.addEvent('ready', function() {
-            player.api('setVolume', 100);
-        });
-
         //var mute_btn_img = document.getElementById("mute_icon_img");
         var mute_txt = document.getElementById("mute_txt");
-        mute_txt.innerHTML = (video_dom.muted) ?  "sound off" : "sound on"
+        mute_txt.innerHTML = (video_dom.muted) ?  "sound on" : "sound off"
         //mute_mg.src = (video_dom.muted) ?  "images/mute.svg" : "images/unmute.svg"
+
+        var iframe = document.querySelector('iframe');
+        var player = new Vimeo.Player(iframe);
+        player.setVolume((video_dom.muted) ?  1 : 0);
     });
 
     //聯絡我們
@@ -337,7 +330,7 @@ function load_bg_video() {
     script.onload = function () {
         //do stuff with the script
     };
-    script.src = "https://f.vimeocdn.com/js/froogaloop2.min.js";
+    script.src = "https://player.vimeo.com/api/player.js";
 
     document.head.appendChild(script); //or something of the likes
     var if_uri = '<iframe id="vimeo_player" src="https://player.vimeo.com/video/377211822?background=1&player_id=vimeo_player" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%" allow="autoplay; fullscreen" allowfullscreen></iframe>';
