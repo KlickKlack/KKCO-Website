@@ -73,3 +73,22 @@
 .fa-fw {
     margin-right:4px;
 }
+
+li.coming-soon {
+    position: relative;
+  }
+
+  li.coming-soon > div {
+    font-size:10px;
+    color: gray;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    bottom: 18px;
+    right: 0;
+  }
+
+  li.coming-soon > div > sup {
+    font-size:10px;
+    color: gray;
+  }
