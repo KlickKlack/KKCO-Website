@@ -333,7 +333,7 @@ function load_bg_video() {
     script.src = "https://player.vimeo.com/api/player.js";
 
     document.head.appendChild(script); //or something of the likes
-    var if_uri = '<iframe id="vimeo_player" src="https://player.vimeo.com/video/377211822?background=1&player_id=vimeo_player" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%" allow="autoplay; fullscreen" allowfullscreen></iframe>';
+    var if_uri = '<iframe id="vimeo_player" src="https://player.vimeo.com/video/402288524?background=1&player_id=vimeo_player" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%" allow="autoplay; fullscreen" allowfullscreen></iframe>';
     video.append(if_uri);
 
     //video.append("<source src='video/MOVINGSTAGE_5G_"+video_res+".mp4' type='video/mp4' >");    
