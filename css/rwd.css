@@ -467,11 +467,15 @@
 @media only screen and (max-width: 320px) {
   .logo-pic {
     min-width: 200px;
-    
+    max-width: 250px;
+    padding-top: 8px;
+    height: auto;
   }
 
   .landscape-div {
     width: 70%;
   }
+
+  
   
 }
