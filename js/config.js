@@ -4,7 +4,7 @@ var appConfig = {
     'pic_path' : 'https://www.kkco.com.tw/img/bg/',
     'cases': [
         {"uri":'images/caseimg-layer1/台中就業視訊博覽會@中興大學.jpg', "alt":"台中就業視訊博覽會@中興大學"},
-        {'uri':'images/caseimg-layer1/企業資安攻防競賽@台北松山文創園區.jpg', "alt":"企業資安攻防競賽@台北松山文創園區"},
+        {'uri':'images/caseimg-layer1/KK-Work-Defense-songshanculturalpark.jpg', "alt":"企業資安攻防競賽@台北松山文創園區"},
         {'uri':'images/caseimg-layer1/知名手遊電競比賽@華山文創園區.jpg', "alt":"知名手遊電競比賽@華山文創園區"},
         {'uri':'images/caseimg-layer1/知名手遊電競比賽@華視大樓攝影棚.jpg', "alt":"知名手遊電競比賽@華視大樓攝影棚"},
         {'uri':'images/caseimg-layer1/知名路跑活動@麗寶賽車場.jpg', "alt":"知名路跑活動@麗寶賽車場"},
