@@ -1,8 +1,14 @@
-var appConfig={
+var appConfig = {
     'Lang' : 'EN',
     'api_uri': "https://webapi.kkco.com.tw:23001/api/inquire",
     'pic_path' : 'https://www.kkco.com.tw/img/bg/',
     'cases': [
+        {"uri":'images/caseimg-layer1/台中就業視訊博覽會@中興大學.jpg', "alt":"台中就業視訊博覽會@中興大學"},
+        {'uri':'images/caseimg-layer1/企業資安攻防競賽@台北松山文創園區.jpg', "alt":"企業資安攻防競賽@台北松山文創園區"},
+        {'uri':'images/caseimg-layer1/知名手遊電競比賽@華山文創園區.jpeg', "alt":"知名手遊電競比賽@華山文創園區"},
+        {'uri':'images/caseimg-layer1/知名手遊電競比賽@華視大樓攝影棚.JPG', "alt":"知名手遊電競比賽@華視大樓攝影棚"},
+        {'uri':'images/caseimg-layer1/知名路跑活動@麗寶賽車場.jpg', "alt":"知名路跑活動@麗寶賽車場"},
+       
         {"uri":'images/caseimg-layer1/KK-Work-01-MSI-m2x.jpg', "alt":"知名遊戲品牌辦理世界級賽事"},
         {'uri':'images/caseimg-layer1/KK-Work-02-17PT-m2x.jpg', "alt":"知名直播平台舉辦大型春酒活動"},
         {'uri':'images/caseimg-layer1/KK-Work-03-ASZF-m2x.jpg', "alt":"知名手機品牌舉辦代言人見面會"},
@@ -70,3 +76,7 @@ var appConfig={
 
     ]
 };
+
+function getAppConfig() {
+    return appConfig
+}
